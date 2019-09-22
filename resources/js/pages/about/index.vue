@@ -1,6 +1,6 @@
 <template>
   <div>
-      <router-link to="sign">Sign In</router-link>
+      <h1>About Page</h1>
   </div>
 </template>
 

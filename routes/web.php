@@ -12,8 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('app');
 });
+
+Route::get('/app/{vue?}', function(){
+    return view('app');
+})->where('vue', '.*');
 
 Auth::routes();
 

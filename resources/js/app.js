@@ -4,13 +4,16 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 import VueRouter from 'vue-router';
+import axios from 'axios';
 require('./bootstrap');
 
 window.Vue = require('vue');
 
+Vue.$http = axios;
 Vue.use(VueRouter);
 
-import Router from './router';
+import router from './router';
+import AppLayout from './app-layout.vue';
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -30,6 +33,7 @@ import Router from './router';
  */
 
 const app = new Vue({
-    Router,
+    router,
     el: '#app',
+    render: h=>h(AppLayout)
 });
