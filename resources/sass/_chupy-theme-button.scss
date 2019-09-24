@@ -1,0 +1,17 @@
+.btn{
+
+    &.btn-primary{
+        background-color:$color-primary;
+        border-color:$color-primary;
+
+        &:not(:disabled):not(.disabled):active{
+            background-color:$color-accent-primary;
+            border-color:$color-accent-primary;
+        }
+    }
+
+    &.btn-secondary{
+        background-color:$color-accent-primary;
+        border-color:$color-accent-primary;
+    }
+}

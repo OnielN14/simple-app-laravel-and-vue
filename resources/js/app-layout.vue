@@ -1,7 +1,11 @@
 <template>
     <main>
         <navbar></navbar>
-        <router-view></router-view>
+
+        <section>
+            <router-view></router-view>
+        </section>
+
     </main>
 </template>
 
@@ -15,6 +19,6 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 
 </style>

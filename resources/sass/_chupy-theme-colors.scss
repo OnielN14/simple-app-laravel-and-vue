@@ -1,0 +1,17 @@
+.bg-light{
+    // background:$light-theme-main!important;
+    background:$color-accent-primary!important;
+}
+
+.--chupy-card-article{
+    color: $color-secondary;
+
+    &:hover{
+        color:$color-secondary;
+        text-decoration: none;
+
+        .card{
+            background-color: $light-theme-main;
+        }
+    }
+}
